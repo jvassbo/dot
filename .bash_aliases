@@ -1,0 +1,35 @@
+# div
+alias plz='sudo'
+alias nano='nano -c'
+alias nn='nano -c'
+#alias up="uptime -p | sed 's/hour/h/' | sed 's/minutes/m/' | sed 's/,//'"
+alias psi='echo "USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND"; ps aux | grep -v grep | grep -i'
+alias rs='rails server'
+alias idea='/home/jon/dev/idea-IU-143.1184.17/bin/idea.sh'
+alias binstall='bundle install && notify-send "bundle install complete"'
+alias hip='/home/jon/progs/HipChat/bin/hipchat'
+alias clipboard='xlip -selection clipboard'
+alias g='grep'
+alias aqua='/home/jon/progs/datastudio/datastudio.sh'
+alias parallel='parallel --no-notice'
+
+# maven
+alias mci='mvn clean install && notify-send "mci complete"'
+alias mcis='mvn clean install -DskipTests=true && notify-send "mcis complete"'
+alias mjr='mvn jetty:run'
+
+# git
+alias gmast='git co master && git pull'
+alias gdif='git diff'
+alias gst='git status'
+alias gmm='git merge master'
+alias gg='git grep -n'
+alias gdev='git co develop && git pull'
+alias gp='git pull'
+alias gco='git co'
+alias ga='git add'
+alias gprun='git remote prune origin'
+alias gmv='git mv'
+alias gmmb='gmast && git co - && gmm'
+alias push='git push'
+alias gitdeletebranches='git branch --merged master | grep -v "\master" | xargs -n 1 git branch -d'
